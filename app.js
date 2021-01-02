@@ -1,7 +1,8 @@
 const billAmount = document.getElementById("billAmt");
-const givenAmount = document.getElementById("givenAmt");
+let givenAmount;
 const submit = document.querySelector("#btn");
 const result = document.querySelector("#result");
+const insert = document.getElementById("toBe");
 
 function calculate(bal){
     const denominations = [2000, 500, 100, 20, 10, 5, 1];
@@ -36,3 +37,9 @@ function doThis() {
 
 
 submit.addEventListener("click", doThis);
+billAmount.addEventListener("change", doThat => {
+    
+    insert.innerHTML = "<span>Enter the Amount given by the customer :</span>" + "<input type='number' id='givenAmt'></input>";
+    givenAmount = document.getElementById("givenAmt");
+})
+
