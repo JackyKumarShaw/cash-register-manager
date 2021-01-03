@@ -39,7 +39,7 @@ function doThis() {
 submit.addEventListener("click", doThis);
 billAmount.addEventListener("change", doThat => {
     
-    insert.innerHTML = "<span>Enter the Amount given by the customer :</span>" + "<input type='number' id='givenAmt'></input>";
+    insert.innerHTML = "<h3>💵Enter the Amount given by the customer💵</h3>" + "<input type='number' id='givenAmt' placeholder = 'Enter Given Amount'></input>";
     givenAmount = document.getElementById("givenAmt");
 })
 

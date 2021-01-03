@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+/* font-family: 'Audiowide', cursive; */
+/* font-family: 'Noto Serif', serif; */
+
+body {
+ 
+    background-color: black;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Audiowide', cursive;
+    color: red;
+}
+
+h3 {
+    font-family: 'Noto Serif', serif;
+    color:yellow;
+}
+
+input {
+    height: 2rem;
+    width: 25%;
+    padding: 0.5rem;
+    border: 0.5rem ridge red;
+    border-radius: 0.5rem;
+}
+p {
+    font-family: 'Noto Serif', serif; 
+    color: green;
+}
+button {
+    font-family: 'Noto Serif', serif; 
+    height: 2rem;
+    width: 50%;
+
+    color: blue;
+    font-weight: bold;
+    font-size: large;
+    border: 0.3rem solid green;
+    border-radius: 0.5rem;
+}
+#container-center {
+    max-width:50%;
+    margin: auto;
+}
