@@ -31,15 +31,13 @@ p {
     color: green;
 }
 button {
-    font-family: 'Noto Serif', serif; 
+    font-family: 'Noto Serif', serif;  
     height: 2rem;
-    width: 50%;
-
+    width: 20%;
     color: blue;
-    font-weight: bold;
-    font-size: large;
+    font-size: 1rem; 
     border: 0.3rem solid green;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
 }
 #container-center {
     max-width:50%;
