@@ -5,7 +5,7 @@
 
 body {
  
-    background-color: black;
+    background-color:black;
     text-align: center;
 }
 
@@ -42,4 +42,11 @@ button {
 #container-center {
     max-width:50%;
     margin: auto;
+}
+table, th, td {
+    width: 60%;
+    color: red;
+    font-family: 'Noto Serif', serif;  
+    border: 0.2rem ridge yellow;
+    margin:auto;
 }

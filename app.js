@@ -1,7 +1,6 @@
 const billAmount = document.getElementById("billAmt");
 let givenAmount;
 const submit = document.querySelector("#btn");
-const result = document.querySelector("#result");
 const insert = document.getElementById("toBe");
 
 function calculate(bal) {
@@ -15,17 +14,33 @@ function calculate(bal) {
             bal = bal - (denominations[i] * contains);
         }
     }
+
+
+    var table = document.createElement("TABLE");
+    var newRow = document.createElement("TR");
+    var typeOfNote = document.createElement("TH");
+    var freqOfNote = document.createElement("TH");
+    var typeOfNoteVal = document.createTextNode("Type of Note");
+    var freqOfNoteVal = document.createTextNode("Frequency of Note");
+    typeOfNote.appendChild(typeOfNoteVal);
+    freqOfNote.appendChild(freqOfNoteVal);
+    newRow.appendChild(typeOfNote);
+    newRow.appendChild(freqOfNote);
+    table.appendChild(newRow);
+    document.getElementById("result").appendChild(table);
+
     minNotes.forEach((noteFreq, noteType) => {
         var newRow = document.createElement("TR");
         var typeOfNote = document.createElement("TD");
         var freqOfNote = document.createElement("TD");
-        var typeOfNoteVal = document.createTextNode(`${noteType}`);
-        var freqOfNoteVal = document.createTextNode(`${noteFreq}`);
+        var typeOfNoteVal = document.createTextNode(noteType);
+        var freqOfNoteVal = document.createTextNode(noteFreq);
         typeOfNote.appendChild(typeOfNoteVal);
         freqOfNote.appendChild(freqOfNoteVal);
         newRow.appendChild(typeOfNote);
         newRow.appendChild(freqOfNote);
-        document.getElementById("result").appendChild(newRow);
+        table.appendChild(newRow);
+        // document.getElementById("result").appendChild(table);
     })
 }
 
